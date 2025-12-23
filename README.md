@@ -1,4 +1,5 @@
 # thecolorpicker
+[Live Demo](https://thecolorpicker-jte.netlify.app/)
 
 Select a color and get a customized color scheme courtesy of [thecolorapi](https://www.thecolorapi.com/)!
 
