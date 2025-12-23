@@ -6,6 +6,7 @@ html, body {
     background-color: #1F2937;
     color: #D5D4D8;
     height: 100%;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
@@ -42,6 +43,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    justify-content: center;
 }
 
 main section:first-child,
@@ -49,9 +51,9 @@ main section:last-child {
     padding: 1em;
 }
 
-#colors-display, #colors-hex {
-    display: flex;
-    justify-content: space-between;
+#colors-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /* form styling */
@@ -83,7 +85,14 @@ form button {
 /* colors */
 .color {
     width: 100%;
+    height: 100%;
     background-color: #1F2937;
+}
+
+.colorbox {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* typography */
@@ -94,4 +103,24 @@ h1,h2,h3,h4 {
 
 a {
     color: #F55A5A;
+}
+
+.colorbox p {
+    font-weight: bold;
+}
+
+/* media rules */
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 0.25em;
+        padding-bottom: 1em;
+    }
+    header p {
+        margin: 0px;
+    }
+    .colorbox p {
+        font-size: 0.75rem;
+    }
 }
