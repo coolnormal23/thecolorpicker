@@ -3,7 +3,41 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>index.html</h1>
+        <header>
+            <h1>thecolorpicker</h1>
+            <p>built with <a href="https://www.thecolorapi.com/" target="_blank" >thecolorapi</a></p>
+        </header>
+        <main>
+            <section>
+                <form id="picker">
+                    <input type="color"/>
+                    <select>
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-dark</option>
+                        <option value="monochrome-light">Monochrome-light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-complement</option>
+                        <option value="triad">Triad</option>
+                    </select>
+                    <button type="submit">Get color scheme</button>
+                </form>
+            </section>
+            <section id="colors-display">
+                <div class="color">color</div>
+                <div class="color">color</div>
+                <div class="color">color</div>
+                <div class="color">color</div>
+                <div class="color">color</div>
+            </section>
+            <section id="colors-hex">
+                <p>hex</p>
+                <p>hex</p>
+                <p>hex</p>
+                <p>hex</p>
+                <p>hex</p>
+            </section>
+        </main>
         <script src="index.js"></script>
     </body>
 </html>

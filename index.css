@@ -1,4 +1,87 @@
+/* structure */
+
 html, body {
     margin: 0;
     padding: 0;
+    background-color: #1F2937;
+    color: #D5D4D8;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 0.5em auto 1fr 0.5em;
+    grid-template-areas:
+        "...."
+        "head"
+        "main"
+        "...."
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 0.5em;
+    border-bottom: 1px solid grey;
+    grid-area: head;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-area: main;
+}
+
+main section:first-child,
+main section:last-child {
+    padding: 1em;
+}
+
+#colors-display, #colors-hex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* form styling */
+form {
+    display: flex;
+    gap: 1em;
+}
+
+form input[type="color" i] {
+    padding: 1px;
+}
+
+form select {
+    background-color: #1F2937;
+    color: #D5D4D8;
+    padding: 0 1em;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #3D4B60;
+    padding: 0 1em;
+    color: #D5D4D8;
+    border: none;
+    border-radius: 5px;
+}
+
+/* colors */
+.color {
+    width: 100%;
+    background-color: grey;
+}
+
+/* typography */
+
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
+header a {
+    color: #F55A5A;
 }
